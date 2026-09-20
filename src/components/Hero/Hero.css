@@ -43,6 +43,11 @@
     justify-content: space-between;
 }
 
+.card:hover, .main-card:hover {
+    cursor: pointer;
+    background-color: var(--color-blue-600);
+}
+
 .card-body,
 .card-header {
     padding: 18px 32px;
