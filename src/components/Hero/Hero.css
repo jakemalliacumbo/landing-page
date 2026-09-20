@@ -5,18 +5,15 @@
 
 .main-card,
 .cards {
-    /* padding: 28px 32px; */
-
     height: 100%;
-
     border-bottom: 1px solid var(--color-blue-400);
 }
 
 .main-card {
-    padding: 48px 32px;
     display: flex;
     flex-direction: column;
     gap: 24px;
+    padding: 48px 32px;
 }
 
 .main-card h1 {
@@ -34,16 +31,15 @@
 }
 
 .card {
-    border-bottom: 1px solid var(--color-blue-400);
-
-    gap: 120px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 120px;
+    border-bottom: 1px solid var(--color-blue-400);
 }
 
-.card:hover, .main-card:hover {
+.main-card:hover,
+.card:hover {
     cursor: pointer;
     background-color: var(--color-blue-600);
 }
@@ -53,18 +49,17 @@
     padding: 18px 32px;
 }
 
-.icon {
-    font-size: 32px;
-    display: flex;
-    align-items: center;
-}
-
 .card-header {
-    font-size: 16px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 16px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
 }
 
 .card-header h2 {
@@ -72,8 +67,9 @@
     font-weight: 500;
 }
 
+.main-card p,
 .card-body h3,
-p {
+.card-body p {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -90,10 +86,10 @@ p {
 }
 
 .card-body {
-    gap: 4px;
-    padding-bottom: 32px;
     display: flex;
     flex-direction: column;
+    gap: 4px;
+    padding-bottom: 32px;
 }
 
 @media (min-width: 768px) {
@@ -121,11 +117,10 @@ p {
     }
 
     .main-card-body {
-        width: 75%;
         display: flex;
         flex-direction: column;
-
         gap: 32px;
+        width: 75%;
     }
 
     .main-card h1 {
