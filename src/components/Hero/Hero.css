@@ -4,7 +4,7 @@
 }
 
 .main-card, .cards {
-    padding: 28px 32px;
+    /* padding: 28px 32px; */
 
     height: 100%;
     
@@ -20,7 +20,7 @@
 
 .main-card h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 400;
 }
 
@@ -30,6 +30,20 @@
     line-height: 1.75;
 
     text-align: left;
+}
+
+.card {
+    border-bottom: 1px solid var(--color-blue-400);
+
+    gap: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body, .card-header {
+    padding: 18px 32px;
 }
 
 .icon {
@@ -47,7 +61,7 @@
 }
 
 .card-header h2 {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 500;
 }
 
@@ -58,12 +72,18 @@
 }
 
 .card-body h3 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 
+.card-body p {
+    font-weight: 300;
+    font-size: 14px;
+}
+
 .card-body {
+    gap: 4px;
+    padding-bottom: 32px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
 }
